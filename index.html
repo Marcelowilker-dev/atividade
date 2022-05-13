@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+<script>
+Parse.serverURL = 'https://parseapi.back4app.com';
+Parse.initialize(
+  'ezIDbMuvuPERHt5u0gGe7RvpBHMlntyiknshDMCq', 'q52gbyUL4igws2Ape9kHS9IPEWatSaN3N4ABsRlT');
+</script>
+</head>
+
+<body>
+   
+        <div class="dv">
+            <h1>Lista de Tarefas</h1>
+            <label for="tarefa">Descrição: </label>
+            <input name="tarefa" id="tarefa" type="text">
+            <button id="btn">Inserir</button>
+        </div>
+        <div class="dv-n">
+            <h2>Tarefas não Finalizadas</h2>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+    <div class="dv-f">
+        <h2>Tarefas Finalizadas</h2>
+        <ul id="listFinished">
+
+        </ul>
+   
+</body>
+</html>
