@@ -60,10 +60,10 @@ const ShowList = async () => {
                         alert('tarefa deletado com sucesso!')
                         location.reload();
                     } catch (error) {
-                        console.error('Error while deleting ParseObject', error);
+                        console.error('Erro ao excluir ParseObject', error);
                     }
                 } catch (error) {
-                    console.error('Error while retrieving ParseObject', error);
+                    console.error('Erro ao recuperar ParseObject', error);
                 }
             }
 
